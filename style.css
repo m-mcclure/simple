@@ -1,6 +1,6 @@
 .max-width-container {
   height:620px;
-  background-color:red;
+  /*background-color:red;*/
   max-width:1000px;
   display:flex;
   margin-left:auto;
@@ -10,12 +10,13 @@
 }
 
 body {
-  background-color:gray;
+  /*background-color:gray;*/
 }
 
 .edit-panel {
   height:100%;
   min-width: 250px;
+  /*width: 330px;*/
   background-color: green;
 }
 
@@ -23,7 +24,7 @@ body {
   height:100%;
   min-width: 650px;
   width:100%;
-  background-color: crimson;
+  /*background-color: crimson;*/
   margin:auto;
   background-image:url("images/blankShirtCropped.png");
   background-size:contain;
