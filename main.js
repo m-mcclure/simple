@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
   function makeBigLayout(){
     $('.max-width-container').css({
-      'max-width': '1400px',
+      'max-width': '1300px',
       'height': '760px'
     });
     $('.shirt-panel').css({
@@ -13,7 +13,7 @@ $( document ).ready(function() {
   }
 
   if (width > 1300){
-    makeBigLayout();
+    // makeBigLayout();
 
   }
 
