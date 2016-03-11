@@ -2,14 +2,15 @@ $( document ).ready(function() {
 
   var width = $(window).width();
 
-  function makeBigLayout(){
+  function setUpBigLayout(){
     $('.max-width-container').css({
       'max-width': '1400px',
-      'height': '760px'
+      'height': '760px',
+      'visibility':'visible'
       // 'margin-top': '100px'
     });
     $('.shirt-panel').css({
-      // 'height': '700px'
+      'min-width':'700px'
     });
     $('.edit-panel').css({
       'width': '500px'
@@ -21,9 +22,17 @@ $( document ).ready(function() {
     });
   }
 
-  if (width > 1300){
-    makeBigLayout();
+  function setUpMobileLayout(){
+    $('.mobile-layout-buttons-row').css('visibility','visible');
 
+  }
+
+  if (width > 1300){
+    setUpBigLayout();
+  } else if (width < 900){
+    setUpMobileLayout();
+  } else {
+    $('.max-width-container').css('visibility','visible');
   }
 
 
