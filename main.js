@@ -12,7 +12,7 @@ $( document ).ready(function() {
       // 'height': '700px'
     });
     $('.edit-panel').css({
-      // 'height': '700px'
+      'width': '500px'
     });
     $('.platen').css({
       'height': '300px',
