@@ -1,0 +1,40 @@
+.max-width-container {
+  height:620px;
+  background-color:red;
+  max-width:1200px;
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:60px;
+  /*visibility: hidden;*/
+}
+
+body {
+  background-color:gray;
+}
+
+.edit-panel {
+  height:100%;
+  min-width: 250px;
+  background-color: green;
+}
+
+.shirt-panel {
+  height:100%;
+  min-width: 650px;
+  width:100%;
+  background-color: crimson;
+  margin:auto;
+  background-image:url("images/blankShirtCropped.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.platen {
+  background-color:cyan;
+  width:210px;
+  height:240px;
+  margin:auto;
+  margin-top:98px;
+}
