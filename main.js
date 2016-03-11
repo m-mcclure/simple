@@ -13,7 +13,7 @@ $( document ).ready(function() {
   }
 
   if (width > 1300){
-    // makeBigLayout();
+    makeBigLayout();
 
   }
 
