@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
   function makeBigLayout(){
     $('.max-width-container').css({
-      'max-width': '1300px',
+      'max-width': '1400px',
       'height': '760px'
     });
     $('.shirt-panel').css({
