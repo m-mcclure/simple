@@ -101,3 +101,20 @@ body {
   height:80%;
   object-fit:contain;
 }
+
+.start-over-button {
+  padding-bottom:10px;
+  width: 100%;
+  font-family:Franchise-Bold;
+  /*font-size:2em;
+  line-height:1em;*/
+  /*background-color:black;*/
+  color:white;
+  margin-top:-10px;
+}
+
+.start-over-button img {
+  object-fit:contain;
+  width:50%;
+  height:80%;
+}

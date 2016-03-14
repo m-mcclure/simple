@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
   var width = $(window).width();
+  var backgroundShirtIsWhite = true;
 
   function setUpBigLayout(){
     $('.max-width-container').css({
@@ -35,5 +36,35 @@ $( document ).ready(function() {
     $('.max-width-container').css('visibility','visible');
   }
 
+  function toggleBackgroundShirtColor(){
+    if (backgroundShirtIsWhite == true) {
+      $('.shirt-panel').css("background-image", "url(images/blackShirt.jpg)");
+      // $('.toggle-shirt-color-btn').css("background-image", "url(images/blankShirt.png)");
+      backgroundShirtIsWhite = false;
+      invertPlatenColors();
+
+    } else {
+      $('.shirt-panel').css("background-image", "url(images/whiteShirt.png)");
+      // $('.toggle-shirt-color-btn').css("background-image", "url(images/blackShirt.jpg)");
+      backgroundShirtIsWhite = true;
+      invertPlatenColors();
+    }
+  }
+
+  function invertPlatenColors(){
+    if (backgroundShirtIsWhite == false) {
+      $('.platen').css('outline', 'white dashed 1px');
+    } else {
+      $('.platen').css('outline', 'black dashed 1px');
+    }
+  }
+
+  $('#radio-selector input').on('change', function() {
+  if ($('input[name=color]:checked', '#radio-selector').val() == 'Black'){
+    toggleBackgroundShirtColor();
+  } else if ($('input[name=color]:checked', '#radio-selector').val() == 'White') {
+    toggleBackgroundShirtColor();
+  }
+});
 
 });
