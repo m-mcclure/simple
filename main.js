@@ -40,7 +40,7 @@ $( document ).ready(function() {
     $('.mobile-layout-buttons-row').css('visibility','visible');
     $('.shirt-panel').css('visibility','visible');
 
-    $('.edit-panel').css('visibility','hidden');
+    $('.edit-panel').remove();
 
   }
 
