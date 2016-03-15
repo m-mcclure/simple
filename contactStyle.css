@@ -1,0 +1,17 @@
+.contact-form {
+  margin-top:80px;
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.contact-send-button {
+  background-color:green;
+  width:100%;
+  color:white;
+}
+
+#submit {
+  background-color:green;
+  width:100%;
+}

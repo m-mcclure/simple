@@ -3,6 +3,19 @@ $( document ).ready(function() {
   var width = $(window).width();
   var backgroundShirtIsWhite = true;
 
+  var bottomEditPanelIsUp = false;
+  var imageCount = 0;
+  var currentlySelectedObject = "";
+  var fullWidthTextAreaIsEmpty = true;
+  var textDivCount = 0;
+  var currentlySelectedMinWidth = 0;
+  var currentlySelectedFontSize = 12;
+  var innerID = "";
+  var currentFont = "Verdana";
+  var currentColor = "black";
+
+  // $('#punch').draggable();
+
   function setUpBigLayout(){
     $('.max-width-container').css({
       'max-width': '1400px',
@@ -25,8 +38,10 @@ $( document ).ready(function() {
 
   function setUpMobileLayout(){
     $('.mobile-layout-buttons-row').css('visibility','visible');
-
   }
+
+  // var leftPanelInsideHeight = $('.left-panel-container').height();
+  // $('.right-panel-container').height(leftPanelInsideHeight);
 
   if (width > 1300){
     setUpBigLayout();
