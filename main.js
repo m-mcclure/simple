@@ -38,6 +38,10 @@ $( document ).ready(function() {
 
   function setUpMobileLayout(){
     $('.mobile-layout-buttons-row').css('visibility','visible');
+    $('.shirt-panel').css('visibility','visible');
+
+    $('.edit-panel').css('visibility','hidden');
+
   }
 
   // var leftPanelInsideHeight = $('.left-panel-container').height();
