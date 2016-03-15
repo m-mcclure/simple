@@ -37,10 +37,22 @@ $( document ).ready(function() {
   }
 
   function setUpMobileLayout(){
-    $('.mobile-layout-buttons-row').css('visibility','visible');
-    $('.shirt-panel').css('visibility','visible');
+    // $('nav').css('width', width);
+    // $('.mobile-layout-buttons-row').css('visibility','visible');
+    // $('.shirt-panel').css('visibility','visible');
 
-    $('.edit-panel').remove();
+  //   // $('.edit-panel').remove();
+  //   $('html, body').css({
+  //     'overflow': 'hidden',
+  //     'height': '100%',
+  //     'position': 'fixed',
+  //     'width': '100%'
+  // });
+  // $('.mobile-button').css('visibility', 'visible');
+
+
+  $('.edit-panel').remove();
+  // $('.toggle-btns, .center-continue-btn, .edit-buttons-row').show();
 
   }
 
