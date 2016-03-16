@@ -11,7 +11,12 @@
   visibility: hidden;
 }
 
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color:pink;
+}
 
 /*.navbar {
   width:300px;
@@ -28,6 +33,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .edit-panel {
+
   border-top-left-radius:4px;
   border-top-right-radius:4px;
   /*width:30%;*/
@@ -37,7 +43,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   /*min-width: 250px;*/
   /*width:300px;*/
   /*width: 330px;*/
-  /*background-color: green;*/
+  background-color: red;
 }
 
 .right-panel-container {
@@ -46,18 +52,39 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .shirt-panel {
-  /*position: fixed;*/
-    /*right: 0;
-    top: 50%;*/
+
+  /* new way?
+
   height:100%;
   min-width: 560px;
   width:100%;
-  /*background-color: crimson;*/
+  background-color: crimson;
   margin:auto;
   background-image:url("images/blankShirtCropped.png");
   background-size:contain;
   background-repeat:no-repeat;
   background-position:center;
+
+  */
+
+  flex-grow:1;
+  height:100%;
+  min-width:480px;
+  /*margin-left:200px;*/
+  /*background-color:magenta;*/
+  /*background-color:green;*/
+  background-image: url("images/whiteShirt.png");
+  background-size: 570px 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*do something about delayed centering on resize */
+  background-position: center 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .platen {

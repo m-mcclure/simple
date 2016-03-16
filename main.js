@@ -39,9 +39,38 @@ $( document ).ready(function() {
   function setUpMobileLayout(){
     // $('nav').css('width', width);
     // $('.mobile-layout-buttons-row').css('visibility','visible');
-    // $('.shirt-panel').css('visibility','visible');
+    // $('.max-width-container').css({
+    //   // 'width': width,
+    //   'height': '760px',
+    //   'visibility':'visible'
+    //   // 'margin-top': '100px'
+    // });
+    // $('.shirt-panel').hide();
+    //
+    $('.shirt-panel').css('visibility','visible');
 
-  //   // $('.edit-panel').remove();
+    $('.platen').css({
+      'width':'220px',
+      'height':'260px',
+      'position':'fixed',
+      'top':'0',
+      'left':'0',
+      'right':'0',
+      'bottom':'0',
+      'margin':'auto'
+    });
+
+    $('.shirt-panel').css({
+      // 'width':'240px',
+      // 'height':'300px',
+      'position':'fixed',
+      'top':'0px',
+      'left':'0',
+      'right':'0',
+      'bottom':'0',
+      'margin':'auto'
+    });
+
   //   $('html, body').css({
   //     'overflow': 'hidden',
   //     'height': '100%',
@@ -51,7 +80,7 @@ $( document ).ready(function() {
   // $('.mobile-button').css('visibility', 'visible');
 
 
-  $('.edit-panel').remove();
+  // $('.edit-panel').remove();
   // $('.toggle-btns, .center-continue-btn, .edit-buttons-row').show();
 
   }
